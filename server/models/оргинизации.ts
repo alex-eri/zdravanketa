@@ -24,4 +24,3 @@ export const Организации = sequelize.define("Организация",
 
 Организации.sync();
   
-    

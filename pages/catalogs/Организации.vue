@@ -2,15 +2,7 @@
 
 <script lang="ts">
 
-interface Организация {
-  Наименование: string | null,
-  ПолноеНаименование: string | null,
-  id: string | null,
-  ИНН: string | null,
-  КПП: string | null,
-  ОГРН: string | null,
-  КодРегиона: string | null,
-}
+
 
 export default {
   data() {
@@ -18,7 +10,7 @@ export default {
     const организация: Организация = {
       Наименование: null,
       ПолноеНаименование: null,
-      id: null,
+      id: "new",
       ИНН: null,
       КПП: null,
       ОГРН: null,
@@ -33,7 +25,7 @@ export default {
   },
 
   async setup() {
-    const организации: Array<any> = shallowReactive(await $fetch('/api/orgs'));
+    const организации: Array<Организация> = shallowReactive(await $fetch('/api/orgs'));
     const Регионы = (await import("./Регионы.json")).default
     return { организации, Регионы }
   },
@@ -49,7 +41,7 @@ export default {
       this.организация = {
         Наименование: null,
         ПолноеНаименование: null,
-        id: null,
+        id: 'new',
         ИНН: null,
         КПП: null,
         ОГРН: null,

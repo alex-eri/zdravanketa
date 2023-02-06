@@ -24,7 +24,12 @@ export default defineNuxtConfig({
       noExternal: ['vuetify'],
     },
   },
-  hooks:{
+  nitro: {
+
+    preset: 'digital-ocean',
+
+  },
+  hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       config?.plugins?.push(vuetify());
     }
