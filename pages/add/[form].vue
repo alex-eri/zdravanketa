@@ -11,6 +11,7 @@ export default {
             ВопросId: null,
             Ответ: null,
             keylistener: null,
+            saved: false,
         }
     },
 
@@ -52,16 +53,19 @@ export default {
 
 
         async save() {
-
+            this.Ответы = await $fetch(`/api/forms/${this.Анкета.id}`, {
+                            method: 'POST',
+                            body:  Array.from(Object.entries(this.Ответы), (k)=>({ Вопрос:k[0], Значение: k[1].value}))
+                        })
         },
 
         async next() {
 
-            if (this)
+            if (this.step < this.Форма.Вопросы.length)
 
                 if (this.Период && this.ОрганизацияId) {
                     if (this.step < 0) {
-                        this.Анкета = await $fetch(`/api/forms/${this.Анкета.id}`, {
+                        this.Анкета = await $fetch(`/api/forms`, {
                             method: 'POST',
                             body: { ОрганизацияId: this.ОрганизацияId, Период: this.Период },
                         })

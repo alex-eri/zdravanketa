@@ -23,14 +23,19 @@ export const Анкеты = sequelize.define("Анкета", {
 Анкеты.sync();
   
 export const Ответы = sequelize.define("Ответы", {
-  id: {
+  АнкетаId: {
     type:DataTypes.UUID,
     primaryKey:true,
-    defaultValue: DataTypes.UUIDV4,
     allowNull: false,
-    unique: true,
+    references: {
+      model: Анкеты
+    },
   },
-  Вопрос: DataTypes.JSON,
+  Вопрос: {
+    type:DataTypes.JSON,
+    primaryKey:true,
+    allowNull: false,
+  },
   Значение: DataTypes.JSON,   
 }, {
   tableName: 'Ответы',
@@ -38,6 +43,5 @@ export const Ответы = sequelize.define("Ответы", {
 }
 });
 
-Ответы.belongsTo(Анкеты);
 
 Ответы.sync();
