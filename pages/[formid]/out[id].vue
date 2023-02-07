@@ -40,12 +40,13 @@ export default {
         </v-row>
         <v-row v-if="$attrs.period">
             <v-col>
-                <v-table>
-                    <thead v-html="outdata.thead" border="1">
-
+                <v-table class="elevation-1" id="data">
+                    <thead v-html="outdata.thead">
                     </thead>
                     <tbody>
-
+                        <tr v-for="row of outdata.data">
+                            <td v-for="col of row" :class="typeof(col) =='number'? 'text-right': ''">{{ col }}</td>
+                        </tr>
                     </tbody>
                 </v-table>
             </v-col>
@@ -53,6 +54,27 @@ export default {
     </v-container>
 </template>
 
+<style >
+@media print {
+    main.v-main {
+        padding-left: 0px !important;
+
+    }
+    .v-container {
+    width: 100%;
+    padding: 16px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+table,tr,td,th {
+  border: 1px solid !important;
+  border-collapse: collapse;
+}
+}
+</style>
+
 <style scoped>
-@media print {}
+
 </style>

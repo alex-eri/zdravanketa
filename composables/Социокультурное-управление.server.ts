@@ -24,16 +24,20 @@ async function genericabspersent(period, Вопрос) {
 
     console.log(typeof Вопрос.id)
 
-    const count = await Ответы.count({ where: { Вопрос: sequelize.fn('json', Вопрос.id), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
+    const count = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify( Вопрос.id)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
 
     for (const [k, v] of Object.entries(Вопрос.Варианты)) {
 
-        const countk = await Ответы.count({ where: { Вопрос: sequelize.fn('json', Вопрос.id), Значение: sequelize.fn('json',k), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
+        const countk = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify( Вопрос.id)), Значение: sequelize.fn('json', JSON.stringify(k)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
         let row = [k, v, countk, 100 * countk / count]
         data.push(row)
     }
 
-    data.push(['', "Всего", count, 100])
+    const countall = count-data[0][2]
+
+    data.push(['', "Всего", countall, 100*countall/count])
+    data.push(['', "Число оценочных суждений", count, ""])
+    data.push(['', "Среднее", countall/count, ""])
 
     return data
 }
@@ -45,12 +49,15 @@ async function out1(period) {
     //TODO thead,subtitle to json
 
     const thead = `<tr>
-            <th class="text-center">№ п/п</th>
-            <th class="text-center">Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций </th>
+            <th class="text-center" rowspan=2>№ п/п </th>
+            <th class="text-center" rowspan=2 style="width:70%">Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций </th>
+            <th class="text-center" colspan=2>Значение</th>
+            </tr>
+            <tr>
             <th class="text-center">Абс.</th>
             <th class="text-center">%</th>
             </tr>
-            <tr><th>1</th><th>2</th><th>3</th><th>4</th></tr>`
+            <tr><th class="text-center">1</th><th class="text-center">2</th><th class="text-center">3</th><th class="text-center">4</th></tr>`
 
     const subtitle = `Выходная форма №1 <br/> Оценка подготовленности здравоохранения по критерию: Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций`
 

@@ -89,7 +89,7 @@ export default {
       <tbody>
         <tr v-for="item in организации" :key="item.id" :to="item.id">
           <td @click="edit(item.id)">{{ item.Наименование }}</td>
-          <td>{{ item.ИНН }} {{ item.КПП }}</td>
+          <td>{{ item.ИНН }} {{ item.КПП ? '/':''}} {{ item.КПП }}</td>
         </tr>
       </tbody>
     </v-table>
