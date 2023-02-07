@@ -29,19 +29,19 @@ export default {
     <v-container>
         <v-row>
             <v-col>
-                <h2 class="d-print-none">
-                    {{ Отчет.title }} <span v-if="$attrs.period">за {{ $attrs.period }}</span>
-                </h2>
+                <h4>
+                    Период отчета {{ $attrs.period }}
+                </h4>
                 <span v-if="!$attrs.period">Укажите период отчета</span>
 
-                <h3 v-html="outdata.subtitle" v-if="$attrs.period">
+                <h3 v-html="Отчет.subtitle" v-if="$attrs.period">
                 </h3>
             </v-col>
         </v-row>
         <v-row v-if="$attrs.period">
             <v-col>
                 <v-table class="elevation-1" id="data">
-                    <thead v-html="outdata.thead">
+                    <thead v-html="Отчет.thead">
                     </thead>
                     <tbody>
                         <tr v-for="row of outdata.data">
@@ -69,12 +69,18 @@ export default {
 
 
 table,tr,td,th {
-  border: 1px solid !important;
+  border: 1px solid black !important;
   border-collapse: collapse;
 }
 }
 </style>
 
 <style scoped>
+#data >>> th {
+    border: 1px solid darkgrey !important;
+} 
+#data >>> td{ 
+    border: 1px solid darkgrey !important;
+}
 
 </style>

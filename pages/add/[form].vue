@@ -12,6 +12,7 @@ export default {
             Ответ: null,
             keylistener: null,
             saved: false,
+            nextdelay: null
         }
     },
 
@@ -65,9 +66,12 @@ export default {
                 return
             }
 
-            if (event.key == "Enter" && this.Ответы[this.ВопросId].value) {
+            if (event.key == "Enter" && !this.nextdelay && this.Ответы[this.ВопросId].value) {
                 const self = this
-                setTimeout(self.next, 100)
+                this.nextdelay = setTimeout(()=>{
+                    self.next()
+                    this.nextdelay=null
+                }, 100)
                 return
             }
 

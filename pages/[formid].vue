@@ -19,6 +19,13 @@ export default {
       Период: ref()
     }
   },
+  computed: {
+    pagekey () {
+      console.log(this.$route.params.id)
+      console.log(this.Период + this.$route.params.id)
+      return this.Период + '/' + this.$route.params.id
+    }
+  }
 }
 </script>
 
@@ -32,9 +39,18 @@ export default {
           <v-btn icon=mdi-menu @click="menu = !menu"></v-btn>
           <v-btn icon=mdi-home to="/"></v-btn>
           <v-btn :to="encodeURI(`/add/${baseuri}`)">Внести данные</v-btn>
-          <v-text-field variant="outlined" :type="Форма.Периодичность" r-label="Период анкетирования" v-model="Период">
-          </v-text-field>
+
         </v-toolbar-items>
+        <v-text-field  single-line  hide-details autofocus
+ variant="solo" density="compact" :type="Форма.Периодичность" r-label="Период анкетирования" v-model="Период">
+          </v-text-field>
+          <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+
+          <v-btn :disabled="!$route.params.id" class="print-doc" href="javascript:(print());"> Распечатать</v-btn>
+        </v-toolbar-items>
+
       </v-app-bar>
 
       <v-navigation-drawer class="d-print-none" v-model="menu"> <!-- TODO to components-->
@@ -47,7 +63,7 @@ export default {
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <NuxtPage :period="Период" :page-key="Период+$route.params"/>
+      <NuxtPage :period="Период" :page-key="pagekey"/>
     </NuxtLayout>
 
   </div>

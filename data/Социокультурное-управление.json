@@ -284,79 +284,117 @@
   "Отчеты": [
     {
       "id": "1",
-      "title": "«Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций.»"
+      "title": "«Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №1 </div> Оценка подготовленности здравоохранения по критерию: Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций"
     },
     {
       "id": "2",
-      "title": "«Отражены ли в функциональных обязанностях руководителей обязанности оценки и развития организационной культуры.»"
+      "title": "«Отражены ли в функциональных обязанностях руководителей обязанности оценки и развития организационной культуры.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>Отражены ли в функциональных обязанностях руководителей обязанности оценки и развития организационной культуры  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №2 </div> Оценка подготовленности здравоохранения по критерию: Отражены ли в функциональных обязанностях руководителей обязанности оценки и развития организационной культуры "
     },
     {
       "id": "3",
-      "title": "«Закреплены ли в положениях организации и документах системы менеджмента качества миссия, ценности, принципы, философия, организационные нормы и их соблюдение.»"
+      "title": "«Закреплены ли в положениях организации и документах системы менеджмента качества миссия, ценности, принципы, философия, организационные нормы и их соблюдение.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Закреплены ли в положениях организации и документах системы менеджмента качества миссия, ценности, принципы, философия, организационные нормы и их соблюдение </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №3 </div> Оценка подготовленности здравоохранения по критерию: Закреплены ли в положениях организации и документах системы менеджмента качества миссия, ценности, принципы, философия, организационные нормы и их соблюдение "
     },
     {
       "id": "4",
-      "title": "«Наличие лидерских качеств у руководителей.»"
+      "title": "«Наличие лидерских качеств у руководителей.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Наличие лидерских качеств у руководителей </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №4 </div> Оценка подготовленности здравоохранения по критерию: Наличие лидерских качеств у руководителей "
     },
     {
       "id": "5",
-      "title": "«Пройдена ли руководителями ПК или профпереподготовка по вопросам менеджмента в здравоохранении»"
+      "title": "«Пройдена ли руководителями ПК или профпереподготовка по вопросам менеджмента в здравоохранении»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> ПК руководителей или профпереподготовка по вопросам менеджмента в здравоохранении </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №5 </div> Оценка подготовленности здравоохранения по критерию: ПК руководителей или профпереподготовка по вопросам менеджмента в здравоохранении "
     },
     {
       "id": "6",
-      "title": "«Пройдена ли руководителями ПК или профпереподготовка по вопросам управления конфликтами в организациях.»"
+      "title": "«Пройдена ли руководителями ПК или профпереподготовка по вопросам управления конфликтами в организациях.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> ПК или профпереподготовка по вопросам управления конфликтами в здравоохранении </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №6 </div> Оценка подготовленности здравоохранения по критерию: ПК или профпереподготовка по вопросам управления конфликтами в здравоохранении "
     },
     {
       "id": "7",
-      "title": "«Наличие разработанных и утвержденных процедур и регламентов социокультурного управления.»"
+      "title": "«Наличие разработанных и утвержденных процедур и регламентов социокультурного управления.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Наличие разработанных и утвержденных процедур и регламентов социокультурного управления   </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №7  </div>   Оценка подготовленности здравоохранения по критерию: Наличие разработанных и утвержденных процедур и регламентов социокультурного управления   "
     },
     {
       "id": "8",
-      "title": "«Наличие утвержденных критериев и процедур контроля, экспертной оценки эффективности социокультурного управления.»"
+      "title": "«Наличие утвержденных критериев и процедур контроля, экспертной оценки эффективности социокультурного управления.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Наличие утвержденных критериев и процедур контроля, экспертной оценки эффективности социокультурного управления  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №8  </div>   Оценка подготовленности здравоохранения по критерию: Наличие утвержденных критериев и процедур контроля, экспертной оценки эффективности социокультурного управления   "
     },
     {
       "id": "9",
-      "title": "«Наличие плана реализации задач социокультурного управления, в том числе обучения кадров.»"
+      "title": "«Наличие плана реализации задач социокультурного управления, в том числе обучения кадров.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Наличие плана реализации задач социокультурного управления, в том числе обучения кадров  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №9  </div>    Оценка подготовленности здравоохранения по критерию: Наличие плана реализации задач социокультурного управления, в том числе обучения кадров  "  
     },
     {
       "id": "10",
-      "title": "«Уровень реализации технологии формирования организационных ценностей.»"
+      "title": "«Уровень реализации технологии формирования организационных ценностей.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология формирования организационных ценностей  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №10  </div>  Оценка реализации технологии формирования организационных ценностей    " 
     },
     {
       "id": "11",
-      "title": "«Уровень реализации технологии формирования организационных целей.»"
+      "title": "«Уровень реализации технологии формирования организационных целей.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология формирования организационных целей  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №11  </div>  Оценка реализации технологии формирования организационных целей    "
     },
     {
       "id": "12",
-      "title": "«Уровень реализации технологии формирования этики организации.»"
+      "title": "«Уровень реализации технологии формирования этики организации.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Технология формирования этики организации   </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №12  </div>   Оценка реализации технологии формирования этики организации   "
     },
     {
       "id": "13",
-      "title": "«Уровень реализации технологии формирования верований.»"
+      "title": "«Уровень реализации технологии формирования верований.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология формирования верований  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №13  </div>  Оценка реализации технологии формирования верований    " 
     },
     {
       "id": "14",
-      "title": "«Уровень реализации технологии формирования представлений и ожиданий.»"
+      "title": "«Уровень реализации технологии формирования представлений и ожиданий.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Технология формирования представлений и ожиданий   </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №14  </div>  Оценка реализации технологии формирования представлений и ожиданий    "
     },
     {
       "id": "15",
-      "title": "«Уровень реализации технологии формирования и поддержка организационных традиций и ритуалов.»"
+      "title": "«Уровень реализации технологии формирования и поддержка организационных традиций и ритуалов.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология формирования и поддержка организационных традиций и ритуалов  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №15  </div>   Оценка реализации технологии формирования и поддержка организационных традиций и ритуалов   "
     },
     {
       "id": "16",
-      "title": "«Уровень реализации технологии формирования оригинальной символики и языковой культуры.»"
+      "title": "«Уровень реализации технологии формирования оригинальной символики и языковой культуры.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Технология формирования оригинальной символики и языковой культуры    </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №16  </div>  Оценка реализации технологии формирования оригинальной символики и языковой культуры    " 
     },
     {
       "id": "17",
-      "title": "«Уровень реализации технологии поддержания культуры внешних коммуникаций.»"
+      "title": "«Уровень реализации технологии поддержания культуры внешних коммуникаций.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Технология поддержания культуры внешних коммуникаций   </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №17  </div>   Оценка реализации технологии поддержания культуры внешних коммуникаций   "
     },
     {
       "id": "18",
-      "title": "«Уровень реализации технологии поддержания культуры внутренних коммуникаций.»"
+      "title": "«Уровень реализации технологии поддержания культуры внутренних коммуникаций.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология поддержания культуры внутренних коммуникаций  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №18  </div>  Оценка реализации технологии поддержания культуры внутренних коммуникаций    " 
     },
     {
       "id": "19",
-      "title": "«Уровень реализации технологии поддержания культуры эффективного лидерства.»"
+      "title": "«Уровень реализации технологии поддержания культуры эффективного лидерства.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология поддержания культуры эффективного лидерства  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №19  </div>  Оценка реализации технологии поддержания эффективного лидерства    "
     },
     {
       "id": "20",
@@ -364,39 +402,57 @@
     },
     {
       "id": "21",
-      "title": "«Уровень реализации технологии культуры эффективной работы с неформальными группами».»"
+      "title": "«Уровень реализации технологии культуры эффективной работы с неформальными группами».»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология культуры эффективной работы с неформальными группами  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №20  </div>  Оценка реализации технологии культуры эффективной работы с неформальными группами    "  
     },
     {
       "id": "22",
-      "title": "«Уровень реализации технологии культуры эффективной работы с персоналом по формированию лояльности и поддержанию сплоченности.»"
+      "title": "«Уровень реализации технологии культуры эффективной работы с персоналом по формированию лояльности и поддержанию сплоченности.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология культуры эффективной работы с персоналом по формированию лояльности и поддержанию сплоченности  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №21  </div>   Оценка реализации технологии культуры эффективной работы с персоналом по формированию лояльности и поддержанию сплоченности   "  
     },
     {
       "id": "23",
-      "title": "«Уровень реализации технологии поддержания культуры положительного поведения работников и служебного этикета.»"
+      "title": "«Уровень реализации технологии поддержания культуры положительного поведения работников и служебного этикета.»" ,
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>   Технология поддержания культуры положительного поведения работников и служебного этикета </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №22  </div>  Оценка реализации технологии поддержания культуры положительного поведения работников и служебного этикета    "  
     },
     {
       "id": "24",
-      "title": "«Уровень реализации технологии формирования эстетики помещений, оборудования медицинских организаций.»"
+      "title": "«Уровень реализации технологии формирования эстетики помещений, оборудования медицинских организаций.»" ,
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технология технологии формирования эстетики помещений, оборудования медицинских организаций  </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №23  </div>   Оценка реализации технологии формирования эстетики помещений, оборудования медицинских организаций   " 
     },
     {
       "id": "25",
-      "title": "«Уровень реализации технологии формирования эстетики персонала медицинских организаций.»"
+      "title": "«Уровень реализации технологии формирования эстетики персонала медицинских организаций.»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'> Технология формирования эстетики персонала медицинских организаций   </th> <th class='text-center' colspan=2>Значение</th> </tr> <tr> <th class='text-center'>Абс.</th> <th class='text-center'>%</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №24  </div>   Оценка реализации технологии формирования эстетики персонала медицинских организаций   " 
     },
     {
       "id": "26",
-      "title": "«Интегральная оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении»"
+      "title": "«Интегральная оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении»",
+      "thead": "<tr> <th class='text-center'>№ п/п </th> <th class='text-center' style='width:70%'>  Параметры подготовленности  </th> <th class='text-center' >Среднее значение</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №25  </div>  Оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении    "  
     },
     {
       "id": "27",
-      "title": "«Интегральная оценка реализации технологий социокультурного управления в здравоохранении»"
+      "title": "«Интегральная оценка реализации технологий социокультурного управления в здравоохранении»",
+      "thead":  "<tr> <th class='text-center'>№ п/п </th> <th class='text-center' style='width:70%'>  Технологии  </th> <th class='text-center' >Среднее значение</th> </tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №26  </div>  Оценка реализации технологий социокультурного управления в здравоохранении     "
     },
     {
       "id": "28",
-      "title": "«Интегральная оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении при разном уровне результативности»"
+      "title": "«Интегральная оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении при разном уровне результативности»",
+      "thead": "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Параметры подготовленности  </th> <th class='text-center' colspan=3>Среднее значение при уровне достижения целевых показателей</th> </tr> <tr> <th class='text-center'>достигнуты менее чем на 75%</th> <th class='text-center'>достигнуты на 75-99%</th> <th class='text-center'>полностью достигнуты (100%)</th></tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №27  </div>  Оценка подготовленности здравоохранения к реализации технологий социокультурного управления в здравоохранении при разном уровне результативности    "  
     },
     {
       "id": "29",
-      "title": "«Интегральная оценка реализации технологий социокультурного управления в здравоохранении при разном уровне результативности»"
+      "title": "«Интегральная оценка реализации технологий социокультурного управления в здравоохранении при разном уровне результативности»",
+      "thead":  "<tr> <th class='text-center' rowspan=2>№ п/п </th> <th class='text-center' rowspan=2 style='width:70%'>  Технологии  </th> <th class='text-center' colspan=3>Среднее значение при уровне достижения целевых показателей</th> </tr> <tr> <th class='text-center'>достигнуты менее чем на 75%</th> <th class='text-center'>достигнуты на 75-99%</th> <th class='text-center'>полностью достигнуты (100%)</th></tr> <tr><th class='text-center'>1</th><th class='text-center'>2</th><th class='text-center'>3</th><th class='text-center'>4</th></tr>",
+      "subtitle": "<div class= 'text-right '>Выходная форма №28  </div>  Оценка реализации технологий социокультурного управления в здравоохранении при разном уровне результативности " 
     }
   ]
 }

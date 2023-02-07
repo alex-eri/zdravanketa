@@ -18,66 +18,75 @@ import { sequelize } from '~~/server/db';
 
 import * as jsonschema from "~~/data/Социокультурное-управление.json"
 
+
+const Форма = jsonschema.default
+
 async function genericabspersent(period, Вопрос) {
 
     let data = []
 
     console.log(typeof Вопрос.id)
 
-    const count = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify( Вопрос.id)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
+    const count = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify(Вопрос.id)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
 
     for (const [k, v] of Object.entries(Вопрос.Варианты)) {
 
-        const countk = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify( Вопрос.id)), Значение: sequelize.fn('json', JSON.stringify(k)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
+        const countk = await Ответы.count({ where: { Вопрос: sequelize.fn('json', JSON.stringify(Вопрос.id)), Значение: sequelize.fn('json', JSON.stringify(k)), '$Анкета.Период$': sequelize.fn('date', new Date(period)) }, include: [{ model: Анкеты }] })
         let row = [k, v, countk, 100 * countk / count]
         data.push(row)
     }
 
-    const countall = count-data[0][2]
+    const countall = count - data[0][2]
 
-    data.push(['', "Всего", countall, 100*countall/count])
+    data.push(['', "Всего", countall, 100 * countall / count])
     data.push(['', "Число оценочных суждений", count, ""])
-    data.push(['', "Среднее", countall/count, ""])
+    data.push(['', "Среднее", countall / count, ""])
 
     return data
 }
 
-async function out1(period) {
-
-    const form = jsonschema.default
-
-    //TODO thead,subtitle to json
-
-    const thead = `<tr>
-            <th class="text-center" rowspan=2>№ п/п </th>
-            <th class="text-center" rowspan=2 style="width:70%">Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций </th>
-            <th class="text-center" colspan=2>Значение</th>
-            </tr>
-            <tr>
-            <th class="text-center">Абс.</th>
-            <th class="text-center">%</th>
-            </tr>
-            <tr><th class="text-center">1</th><th class="text-center">2</th><th class="text-center">3</th><th class="text-center">4</th></tr>`
-
-    const subtitle = `Выходная форма №1 <br/> Оценка подготовленности здравоохранения по критерию: Наличие в организации структуры, отвечающей за вопросы мониторинга, контроля, коррекции, развития организационной культуры, поддержания традиций`
-
-    const ВопросId = 2
-
-    const Вопрос = form.Вопросы.filter((v) => (v.id == ВопросId))[0]
-
-    const data = await genericabspersent(period, Вопрос)
-
-    const res = { thead, subtitle, data }
-
-    console.log(res)
-
-    return res
+function genhandlers(ВопросId) {
+    const out1 = async (period) => {
+        const Вопрос = Форма.Вопросы.filter((v) => (v.id == ВопросId))[0]
+        const data = await genericabspersent(period, Вопрос)
+        const res = { data }
+        return res
+    }
+    return out1
 }
 
 
 
 export const handlers = {
-    out: { '1': out1 },
+    out: {
+        '1': genhandlers('2'),
+        '2': genhandlers('3'),
+        '3': genhandlers('4'),
+        '4': genhandlers('5'),
+        '5': genhandlers('6'),
+        '6': genhandlers('7'),
+        '7': genhandlers('8'),
+        '8': genhandlers('9'),
+        '9': genhandlers('10'),
+        '10': genhandlers('11'),
+        '11': genhandlers('12'),
+        '12': genhandlers('13'),
+        '13': genhandlers('14'),
+        '14': genhandlers('15'),
+        '15': genhandlers('16'),
+
+        '16': genhandlers('17'),
+        '17': genhandlers('18'),
+        '18': genhandlers('19'),
+        '19': genhandlers('20'),
+        '20': genhandlers('21'),
+        '21': genhandlers('22'),
+        '22': genhandlers('23'),
+
+        '23': genhandlers('24'),
+        '24': genhandlers('25'),
+        '25': genhandlers('26'),
+    },
     json: jsonschema.default
 }
 
