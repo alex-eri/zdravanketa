@@ -7,13 +7,13 @@ const bases = [{
 
 <template>
     <v-card flat>
-    <v-toolbar>
+      <v-app-bar flat dark color="primary" class="d-print-none">
       <v-toolbar-items>
       <v-btn icon=mdi-home to="/"></v-btn>
         <v-btn :to="encodeURI('/catalogs/Организации')">Организации</v-btn>
       </v-toolbar-items>
       
-    </v-toolbar>
+    </v-app-bar>
     
         <v-list lines="one">
             <v-list-subheader> Анкеты </v-list-subheader>

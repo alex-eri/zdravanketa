@@ -20,7 +20,7 @@ export const Анкеты = sequelize.define("Анкета", {
 
 Анкеты.belongsTo(Организации)
 
-Анкеты.sync();
+
   
 export const Ответы = sequelize.define("Ответы", {
   АнкетаId: {
@@ -43,5 +43,8 @@ export const Ответы = sequelize.define("Ответы", {
 }
 });
 
+Ответы.belongsTo(Анкеты)
+Анкеты.hasMany(Ответы, {foreignKey: 'АнкетаId'})
 
+Анкеты.sync();
 Ответы.sync();

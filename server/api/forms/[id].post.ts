@@ -1,8 +1,15 @@
 import { Model } from "sequelize";
-import { Анкеты } from "~~/server/models/анкеты"
+import { Ответы } from "~~/server/models/анкеты"
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
-    const id = event.context.params.id
-    
+    const АнкетаId = event.context.params.id
+
+    for (var element of body) {
+        if (element.Значение) {
+            element.АнкетаId = АнкетаId
+            const [Ответ, created] = (await Ответы.upsert(element));
+        }
+    };
+    return true;
 })
