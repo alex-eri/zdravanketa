@@ -96,6 +96,7 @@ export default {
                             method: 'POST',
                             body: { ОрганизацияId: this.ОрганизацияId, Период: this.Период },
                         })
+                        this.saved=false
                         const СохраненныеОтветы = await $fetch(`/api/forms/${this.Анкета.id}`)
                         for (const Вопрос of (this.Форма.Вопросы as Array<Вопрос>)) {
                             this.Ответы[Вопрос.id].value = null
