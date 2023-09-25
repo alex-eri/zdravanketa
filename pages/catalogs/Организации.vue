@@ -1,13 +1,11 @@
 
 
-<script lang="ts">
-
-
+<script>
 
 export default {
   data() {
 
-    const организация: Организация = {
+    const организация = {
       Наименование: null,
       ПолноеНаименование: null,
       id: "new",
@@ -25,7 +23,7 @@ export default {
   },
 
   async setup() {
-    const организации: Array<Организация> = shallowReactive(await $fetch('/api/orgs'));
+    const организации = shallowReactive(await $fetch('/api/orgs'));
     const Регионы = (await import("./Регионы.json")).default
     return { организации, Регионы }
   },
@@ -49,12 +47,12 @@ export default {
       };
       this.dialog = true;
     },
-    async edit(id: string) {
+    async edit(id) {
       this.организация = await $fetch(`/api/orgs/${id}`);
       if (this.организация.id)
         this.dialog = true;
     },
-    async save(id: string | null) {
+    async save(id) {
       this.организация = await $fetch(`/api/orgs/${id}`, {
         method: 'POST',
         body: this.организация,
