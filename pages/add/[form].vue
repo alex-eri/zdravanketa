@@ -12,7 +12,8 @@ export default {
             Ответ: null,
             keylistener: null,
             saved: false,
-            nextdelay: null
+            nextdelay: null,
+            console: console
         }
     },
 
@@ -134,16 +135,30 @@ export default {
             <v-app-bar flat dark color="primary" class="d-print-none">
                 <v-toolbar-items>
                     <v-btn icon=mdi-home to="/"></v-btn>
-                    <v-btn icon="mdi-skip-previous" @click="previous" :disabled="step < 0"></v-btn>
-                    <v-btn icon="mdi-skip-next" @click="next" :disabled="step >= Форма.Вопросы.length"></v-btn>
+                    <v-btn icon="mdi-skip-previous" @click="previous" :disabled="(step < 0)"></v-btn>
+                    <v-btn icon="mdi-skip-next" @click="next" :disabled="(step >= Форма.Вопросы.length) || (step == -2)"></v-btn>
                     <v-btn icon="mdi-upload" @click="save" :disabled="step != -2"></v-btn>
                 </v-toolbar-items>
 
             </v-app-bar>
+
             <v-card-item v-if="step == -2">
+                <v-list>
+                    <v-list-item v-for="(Ответ,ВопросId) of Ответы">
+                      
+                    <p v-if="Форма.Вопросы[ВопросId]">
+                    {{ Форма.Вопросы[ВопросId].Вопрос }}: <span v-if="Ответ.value" class="font-weight-bold"> {{ Форма.Вопросы[ВопросId].Варианты[Ответ.value] }} </span>
+                     <span v-else class="text-warning">Нет ответа</span> 
+                    </p>
+                </v-list-item>
+                </v-list>
 
                 <v-alert color="success" v-if="saved">Сохраненно!</v-alert>
-                <v-card-actions v-else><v-btn @click="save">Сохранить</v-btn></v-card-actions>
+                <v-card-actions v-else>
+                    <v-btn variant="elevated" color="primary"  @click="save" append-icon="mdi-upload">Сохранить</v-btn>
+                    <v-btn variant="outlined" @click="step=0">Перепроверить</v-btn>
+                </v-card-actions>
+                
             </v-card-item>
 
 

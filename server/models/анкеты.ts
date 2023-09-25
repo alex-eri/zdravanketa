@@ -11,7 +11,8 @@ export const Анкеты = sequelize.define("Анкета", {
       allowNull: false,
       unique: true,
     },
-    Период: DataTypes.DATEONLY,   
+    Период: DataTypes.DATEONLY,
+    Номер: DataTypes.JSON,
   }, {
     tableName: 'Анкеты',
     name :{plural:"Анкеты", singular:"Анкета"
