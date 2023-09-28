@@ -12,7 +12,7 @@ export const Анкеты = sequelize.define("Анкета", {
       unique: true,
     },
     Период: DataTypes.DATEONLY,
-    Номер: DataTypes.JSON,
+
   }, {
     tableName: 'Анкеты',
     name :{plural:"Анкеты", singular:"Анкета"
@@ -20,8 +20,6 @@ export const Анкеты = sequelize.define("Анкета", {
 });
 
 Анкеты.belongsTo(Организации)
-
-
   
 export const Ответы = sequelize.define("Ответы", {
   АнкетаId: {
@@ -43,6 +41,8 @@ export const Ответы = sequelize.define("Ответы", {
   name :{plural:"Ответы", singular:"Ответ"
 }
 });
+
+
 
 Ответы.belongsTo(Анкеты)
 Анкеты.hasMany(Ответы, {foreignKey: 'АнкетаId'})
